@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import { connect } from "react-redux";
+import Empty from "../empty/empty.component";
 import ChatBody from "../chat-body/chat-body.component";
 import { openChatStart } from "../../redux/opend-chat/open-chat-action";
 
@@ -9,7 +10,7 @@ const FriendBody = ({viewFriend, openChatStart}) => {
         
     }, [state])
     if (!viewFriend) {
-        return <h1>Updating Progile</h1>      
+        return <Empty/>    
     }
     const startChatOffriend = (friend) => {
         console.log(friend);

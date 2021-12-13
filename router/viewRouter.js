@@ -4,7 +4,7 @@ const viewController = require('./../controller/viewController');
 const app = express();
 
 app.get('/', (req, res) => {
-    res.status(200).send("HELLO")
+    res.sendFile(path.resolve('/client/build/index.html'))
 });
 
 

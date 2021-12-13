@@ -2,7 +2,7 @@
   "name": "nmessage",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "homepage": ".",
   "scripts": {
     "prod": "node index.js",
     "start": "nodemon index.js",

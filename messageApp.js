@@ -18,9 +18,9 @@ app.use(express.json({ limit: "100kb" }));
 app.use(cookieParser());
 app.use(mainRouter);
 
-app.all("*", function (req, res, next) {
-    return next(new AppError("Sorry we did not find your page!", 404));
-});
+// app.all("*", function (req, res, next) {
+//     return next(new AppError("Sorry we did not find your page!", 404));
+// });
 
 //Adding Globule Error handler
 app.use(globalErrorController);

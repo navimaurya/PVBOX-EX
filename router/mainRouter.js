@@ -7,7 +7,7 @@ const app = express();
 
 
 //VIEW ROUTER
-app.use('/', viewRouter);
+// app.use('/', viewRouter);
 
 //API ROUTER
 app.use('/api', authRouter);
